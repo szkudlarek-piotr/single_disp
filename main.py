@@ -91,7 +91,6 @@ all_disps = []
 new_disp = []
 for i in range(0, len(disp_lines)):
     line = disp_lines[i]
-    #print(line)
     if "freq" in line or line.strip() == "":
         print(new_disp)
         if len(new_disp) > 0:
@@ -106,8 +105,8 @@ for i in range(0, len(disp_lines)):
 
 displacement_index = 0
 for mode in all_disps:
-    #print("Tworze komórkę numer {}.".format(displacement_index))
     print("\n")
+    print("Creating cell number {}.".format(displacement_index+1))
     new_displacemt = Displacement(mode)
     new_displacemt.create_displaced_cell()
     displacement_index += 1
