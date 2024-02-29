@@ -23,9 +23,6 @@ class Displacement:
             atom_index += 1
         displaced_cell.introduce_in_frac()
 
-
-
-
 class Cell:
     def __init__(self, xdim, ydim, zdim):
         self.xdim = xdim
